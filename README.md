@@ -1,5 +1,4 @@
 [**ReactJS-Quote-machine**](https://github.com/rashmiap/react-quote-machine/)
-
 -
 This is a simple responsive random quote generator app built using ReactJS.<br />
 [FavQs API v2](https://favqs.com/api) is used to fetch data. <br />
