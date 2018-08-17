@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Demo
 -
-![Preview quote machine](src/Assets/previews/preview-quote.png)
+![Preview quote machine](src/previews/preview-quote.png)
 The app can be seen in action [here](https://react-quote-machine.surge.sh/).
 
 **Run Locally**
