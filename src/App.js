@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
+import replay from './replay.svg';
+import quote from './quote.svg';
+import loading from './loading.svg';
+import errored from './errored.svg';
 
 class App extends Component {
   constructor(){
@@ -34,21 +38,32 @@ class App extends Component {
   render() {
     const { quotes, isLoading, error } = this.state;
     if(error){
-      return <p>{error.message}</p>;
+      return <div className="App">
+              <img src={errored} alt="errored" />
+              <p>{error.message}</p>
+            </div>;
     }
 
     if(isLoading){
-      return <p>Loading ...</p>;
+      return <div className="App">
+              <img src={loading} alt="loading" />
+              <p>Loading ...</p>
+              </div>;
     }
     return (
       <div className="App">
-        <p className="App-intro">
-          {quotes.author}
-        </p>
-        <p>
-          {quotes.body}
-        </p>
-        <button onClick={this.__fetchQuote.bind(this)}>again</button>
+        <h3>Random quote machine</h3>
+        <div className="App-card">
+          <div className="App-card__quote">
+            <img src={quote} alt="quote icon" width="40px" />
+            <p>{quotes.body}</p>
+          </div>
+          <p className="App-card__author">- {quotes.author}</p>
+          <button className="App-card__reload" onClick={this.__fetchQuote.bind(this)}>
+            <img src={replay} alt="replay icon" />
+            <p>Another one!</p>
+          </button>
+        </div>
       </div>
     );
   }
