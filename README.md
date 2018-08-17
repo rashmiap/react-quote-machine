@@ -6,6 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Demo
 -
+![Preview quote machine](src/Assets/previews/preview-quote.png)
 The app can be seen in action [here](http://redux-tmdb-app.surge.sh/).
 
 **Run Locally**
