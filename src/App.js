@@ -52,7 +52,7 @@ class App extends Component {
     }
     return (
       <div className="App">
-        <h3>Random quote machine</h3>
+        <h3>Random quote machine :crystal_ball:</h3>
         <div className="App-card">
           <div className="App-card__quote">
             <img src={quote} alt="quote icon" width="40px" />
